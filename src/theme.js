@@ -1,4 +1,4 @@
-import * as React from 'react'
+import * as React from 'react';
 import {
   Navbar,
   HomePage,
@@ -16,7 +16,7 @@ import {
   InlineCode,
   OrderedList,
   UnorderedList,
-} from '@create-react-resume/theme-default'
+} from '@create-react-resume/theme-default';
 
 export default {
   layouts: {
@@ -27,18 +27,20 @@ export default {
     Education: SectionsPage,
   },
   elements: {
-    p: props => <Paragraph {...props} />,
-    h1: props => <H1 {...props} />,
-    h2: props => <H2 {...props} />,
-    h3: props => <H3 {...props} />,
-    h4: props => <H4 {...props} />,
-    h5: props => <H5 {...props} />,
-    h6: props => <H6 {...props} />,
-    a: props => <Link {...props} />,
-    blockquote: props => <Blockquote {...props} />,
-    hr: props => <Hr {...props} />,
-    inlineCode: props => <InlineCode {...props} />,
-    ol: props => <OrderedList {...props} />,
-    ul: props => <UnorderedList {...props} />,
+    p: (props) => <Paragraph {...props} />,
+    h1: (props) => <H1 {...props} />,
+    h2: (props) => <H2 {...props} />,
+    h3: (props) => <H3 {...props} />,
+    h4: (props) => <H4 {...props} />,
+    h5: (props) => <H5 {...props} />,
+    h6: (props) => <H6 {...props} />,
+    a: (props) => <Link {...props} />,
+    blockquote: (props) => <Blockquote {...props} />,
+    hr: (props) => <Hr {...props} />,
+    inlineCode: (props) => (
+      <InlineCode style={{ backgroundColor: '#237398' }} {...props} />
+    ),
+    ol: (props) => <OrderedList {...props} />,
+    ul: (props) => <UnorderedList {...props} />,
   },
-}
+};

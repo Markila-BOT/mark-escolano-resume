@@ -21,21 +21,19 @@ const App = () => {
           <CssBaseline />
           <Header>
             <Navigation
-              email="mailto:#"
-              github="https://github.com/matmalkowski"
-              linkedin="#"
-              medium="#">
+              email="mailto:mark.escolano14@gmail.com"
+              github="https://github.com/Markila-BOT"
+              linkedin="https://www.linkedin.com/in/mark-escolano-2715ab129/"
+              medium="https://medium.com/@markilabot">
               <Link to="/">Home</Link>
               <Link to="/roles">Roles</Link>
               <Link to="/skills">Skills</Link>
-              <Link to="/education">Education</Link>
             </Navigation>
           </Header>
           <Main>
             <HomeRoute />
             <RolesRoute />
             <SkillsRoute />
-            <EducationRoute />
           </Main>
           <Footer>
             Made with{' '}
