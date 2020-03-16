@@ -1,7 +1,6 @@
 import React from 'react';
 import { UITemplate, Navigation } from '@create-react-resume/core';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
-import EducationRoute from './pages/education';
 import SkillsRoute from './pages/skills';
 import HomeRoute from './pages/home';
 import RolesRoute from './pages/roles';
@@ -10,7 +9,7 @@ import {
   CssBaseline,
   Header,
   Main,
-  Footer,
+  Footer
 } from '@create-react-resume/theme-default';
 
 const App = () => {
@@ -24,7 +23,8 @@ const App = () => {
               email="mailto:mark.escolano14@gmail.com"
               github="https://github.com/Markila-BOT"
               linkedin="https://www.linkedin.com/in/mark-escolano-2715ab129/"
-              medium="https://medium.com/@markilabot">
+              medium="https://medium.com/@markilabot"
+            >
               <Link to="/">Home</Link>
               <Link to="/roles">Roles</Link>
               <Link to="/skills">Skills</Link>
